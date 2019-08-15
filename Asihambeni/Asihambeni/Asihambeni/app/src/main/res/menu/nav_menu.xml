@@ -4,14 +4,18 @@
 
     <item
         android:icon="@drawable/home_green"
-        android:title="@string/nav_home" />
+        android:title="@string/nav_home"
+        android:id="@+id/nav_home"/>
     <item
         android:icon="@drawable/notification_green"
-        android:title="@string/nav_notif" />
+        android:title="@string/nav_notif"
+        android:id="@+id/nav_notification"/>
     <item
         android:icon="@drawable/profile_green"
-        android:title="@string/nav_pro" />
+        android:title="@string/nav_pro"
+        android:id="@+id/nav_profile"/>
     <item
         android:icon="@drawable/settings_green"
-        android:title="@string/nav_settings" />
+        android:title="@string/nav_settings"
+        android:id="@+id/nav_settings"/>
 </menu>
