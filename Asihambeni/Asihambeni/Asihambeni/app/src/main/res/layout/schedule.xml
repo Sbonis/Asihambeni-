@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScheduleActivity"
+    android:background="@drawable/images">
+
+    <EditText
+        android:id="@+id/editlocation"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170sp"
+        android:background="@drawable/logintext"
+        android:hint="      Pick Up Point"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorDarkGrey"
+        android:layout_gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/logintext"
+        android:hint="      Destination"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorDarkGrey"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Date"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/buttontext" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Time"
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="10sp"
+        android:background="@drawable/buttontext" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_marginTop="10sp"
+        android:text="Type Of User"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:background="#fff"/>
+
+    <RadioGroup
+        android:id="@+id/radioType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/radioRider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rider"
+            android:checked="true"
+            android:textColor="@color/colorBlack"
+            />
+
+        <RadioButton
+            android:id="@+id/radioDriver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Driver"
+            android:textColor="@color/colorBlack"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Schedule"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="130sp"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/buttontext"/>
+
+</LinearLayout>

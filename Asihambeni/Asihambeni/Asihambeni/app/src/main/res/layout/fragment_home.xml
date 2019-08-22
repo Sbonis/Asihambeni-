@@ -6,9 +6,47 @@
     tools:context=".HomeFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home Fragment" />
+
+    <EditText
+        android:id="@+id/editlocation"
+        android:imeOptions="actionNext"
+        android:layout_width="300sp"
+        android:layout_height="41dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/logintext"
+        android:hint="      Pick Up Point"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorDarkGrey"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="300sp"
+        android:layout_height="41sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/logintext"
+        android:hint="      Destination"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:textColorHint="@color/colorDarkGrey" />
+
+    <Button
+        android:id="@+id/schedule"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Schedule"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="220sp"
+        android:layout_marginLeft="105sp"/>
+
 
 </FrameLayout>

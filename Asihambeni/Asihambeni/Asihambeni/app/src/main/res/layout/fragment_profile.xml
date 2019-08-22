@@ -6,11 +6,12 @@
     tools:context=".ProfileFragment"
     android:background="@color/colorWhite">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile Fragment"
-        android:textColor="@color/colorBlack"/>
+        android:layout_height="50sp"
+        android:text="Schedule Rides"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:background="@drawable/buttontext" />
 
 </FrameLayout>
