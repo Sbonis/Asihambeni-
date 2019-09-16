@@ -9,3 +9,5 @@ would like to be a passager he requests a scheduled ride, and notifications will
 an available driver going to the same destination, a notification will be pushed to that driver and he either accepts or rejects the request.
 
 We have used android and firebase technologies to develop the App. 
+
+[![Build Status](https://travis-ci.com/Sbonis/Asihambeni-.svg?branch=master)](https://travis-ci.com/Sbonis/Asihambeni-)
