@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Sbonis/Asihambeni-.svg?branch=master)](https://travis-ci.com/Sbonis/Asihambeni-)
+# Travis [![Build Status](https://travis-ci.com/Sbonis/Asihambeni-.svg?branch=master)](https://travis-ci.com/Sbonis/Asihambeni-)
 
 The project is aimed at creating the share a ride app, that is, 
 it prompt users if they want to share rides to a perticular shared destination.
