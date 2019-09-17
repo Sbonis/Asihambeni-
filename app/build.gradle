@@ -1,22 +1,42 @@
 apply plugin: 'com.android.application'
+apply plugin:'jacoco'
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.1"
+    testOptions.unitTests.includeAndroidResources = true
     defaultConfig {
         applicationId "com.example.asihambeni"
         minSdkVersion 23
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
+            testCoverageEnabled false
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug
+                {
+                    testCoverageEnabled true
+                }
     }
+    testOptions {
+
+        unitTests.all {
+
+            jacoco {
+                includeNoLocationClasses = true
+
+            }
+
+        }
+
+    }
+
 }
 
 dependencies {
@@ -29,11 +49,20 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    testImplementation 'org.robolectric:robolectric:4.2.1'
 
     implementation "com.google.firebase:firebase-auth:17.0.0"
     implementation 'com.google.firebase:firebase-core:17.0.0'
 
     implementation 'com.google.firebase:firebase-database:19.0.0'
 
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
 }
+
+jacoco {
+    version = '0.8.0'
+}
+
 apply plugin: 'com.google.gms.google-services'

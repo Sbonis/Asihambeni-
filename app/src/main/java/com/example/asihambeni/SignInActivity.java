@@ -16,11 +16,12 @@ import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignInActivity extends AppCompatActivity{
-    private EditText inputEmailAddress, inputPassword;
+    EditText inputEmailAddress, inputPassword;
     private Button btnSignIn;
     private FirebaseAuth auth;
     private ProgressDialog progressDialog;
@@ -28,6 +29,7 @@ public class SignInActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        FirebaseApp.initializeApp(this);
         setContentView(R.layout.activity_sign_in);
 
         progressDialog = new ProgressDialog(this);
